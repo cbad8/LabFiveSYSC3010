@@ -6,14 +6,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
     <TextView
+            android:text="Strawberi E-Tank!"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="78dp"
+            tools:layout_editor_absoluteX="107dp" android:id="@+id/textView" android:textStyle="bold"
+            android:textSize="24sp" app:fontFamily="sans-serif-black"/>
+    <Button
+            android:text="Next Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="414dp"
+            tools:layout_editor_absoluteX="143dp" android:id="@+id/button"/>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="612dp"
+            tools:layout_editor_absoluteX="85dp" android:id="@+id/ratingBar"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="395dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            tools:layout_editor_absoluteY="132dp" tools:layout_editor_absoluteX="8dp"/>
+    <TextView
+            android:text="Like and Subscribe!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="582dp"
+            tools:layout_editor_absoluteX="87dp" android:id="@+id/textView2" android:textSize="18sp"/>
+    <RadioGroup
+            android:layout_width="123dp"
+            android:layout_height="102dp" tools:layout_editor_absoluteY="174dp"
+            tools:layout_editor_absoluteX="145dp" android:id="@+id/radioGroup">
+        <RadioButton
+                android:text="Black Ops 1"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton4" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Black Ops 2"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton5" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Black Ops 3"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton6" android:layout_weight="1"/>
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
